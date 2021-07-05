@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: #222;}
+/* textbar */
+.form-control{
+    display: inline-block;
+    line-height: 1;
+}   
+/* container */
+.container{
+    position: relative;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}   
+.btn{
+    margin-bottom: 4px;
+}
+.not-completed{
+    margin:5px 0;
+    padding: 20px;
+}
+.completed li{
+    background: greenyellow;
+}
+h3{
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+ul{
+    list-style: none;
+}
+ul li{
+    background-color: #fd8a2c;
+    width: 100%;
+    padding: 17px;
+    font-size: 22px;
+    margin: 5px 0;
+    counter-increment: counter;
+}
+ul li::before{
+    content: counter(counter);
+    background-color: black;
+    color: white;
+
+    width: 2rem;
+    height: 2rem;
+    /* background-color: #ff8282; */
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+.completed li::before{
+    content: counter(counter);
+    background-color: black;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    /* background-color: #30b8greenyellow; */
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+
+.addtask button{
+	margin: 0 10px;
+	background: rgb(41, 98, 255);
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+li button{
+	float: right;
+	padding: 5px;
+	font-size: 28px;
+	line-height: 28px;
+	margin-right: 15px;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
