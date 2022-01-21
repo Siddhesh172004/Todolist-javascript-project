@@ -21,7 +21,7 @@ input.addEventListener('keyup', (e)=>{
 			trashbtn.innerHTML = '<i class="fa fa-trash"></i>';
 
         if(input.value !==''){
-            inputli.textContent=input.value;
+            inputl=input.value;
             input.value='';
             notcompleted.appendChild(inputli);
             inputli.appendChild(checkbtn);
